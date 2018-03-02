@@ -1,2 +1,2 @@
 # tlibc
-My own version of implementation of libc
+My own version of the implementation of libc
