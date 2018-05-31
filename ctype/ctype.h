@@ -26,6 +26,7 @@ extern const short* _Ctype, * _Tolower, * _Toupper;
 #define iscntrl(c)		(_Ctype[(int) (c)] & (_CN|_BB))
 #define isdigit(c)		(_Ctype[(int) (c)] & (_DI))
 #define isgraph(c)		(_Ctype[(int) (c)] & (_LO|_UP|_DI|_PU|_XA))
+#define ispunct(c)		(_Ctype[(int) (c)] & (_PU))
 #define islower(c)		(_Ctype[(int) (c)] & (_LO))
 #define isupper(c)		(_Ctype[(int) (c)] & (_UP))
 #define isprint(c)		(_Ctype[(int) (c)] & (_LO|_UP|_DI|_SP|_PU|_XA))

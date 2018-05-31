@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include "ctype.h" // now remain in custom folder
 
-#if EOF != 1 || UCHAR_MAX != 255
+#if EOF != -1 || UCHAR_MAX != 255
 #error CTYPE TABLE ERROR
 #endif
 
@@ -26,7 +26,7 @@ static const short _CTYPETAB[257] = { 0, // EOF
 	_PU, LXD, LXD, LXD, LXD, LXD, LXD, _LO,
 	_LO, _LO, _LO, _LO, _LO, _LO, _LO, _LO, 
 	_LO, _LO, _LO, _LO, _LO, _LO, _LO, _LO,
-	_LO, _LO, _LO, _PU, _PU, _PU, _BB
+	_LO, _LO, _LO, _PU, _PU, _PU, _PU, _BB
 };
 
 const short *_Ctype = &_CTYPETAB[1];
